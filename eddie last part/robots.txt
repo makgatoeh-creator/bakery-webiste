@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://snazzy-cannoli-789af1.netlify.app/sitemap.xml

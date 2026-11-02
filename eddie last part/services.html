@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse Apex Bakery's fresh sourdough, wholewheat and white loaves, custom cakes, and catering services.">
+    <title>Bakery Products &amp; Catering | Apex Bakery</title>
+    <link rel="canonical" href="https://snazzy-cannoli-789af1.netlify.app/services.html">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header>
+        <p class="brand-name">Apex Bakery</p>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html" aria-current="page">Services</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section>
+            <h1>Bakery Products &amp; Catering Services</h1>
+            <p>Explore what we offer below:</p>
+
+            <div class="product-controls" aria-label="Filter and sort products">
+                <div>
+                    <label for="product-search">Search products and services</label>
+                    <input type="search" id="product-search" placeholder="Try bread or cake">
+                </div>
+                <div>
+                    <label for="product-category">Category</label>
+                    <select id="product-category">
+                        <option value="all">All categories</option>
+                        <option value="Bread">Bread</option>
+                        <option value="Cakes">Cakes</option>
+                        <option value="Catering">Catering</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="product-sort">Sort by</label>
+                    <select id="product-sort">
+                        <option value="name-asc">Name (A to Z)</option>
+                        <option value="name-desc">Name (Z to A)</option>
+                    </select>
+                </div>
+            </div>
+            <p id="product-status" class="result-status" aria-live="polite"></p>
+            <div class="product-grid" id="product-grid"></div>
+            <noscript>
+                <p>Enable JavaScript to search, filter, and sort our products and services.</p>
+                <ul>
+                    <li>Sourdough, Wholewheat, and White Loaves baked fresh daily.</li>
+                    <li>Custom birthday and event cakes to order.</li>
+                    <li>Sandwiches, pastries, and drinks for corporate events and private parties.</li>
+                </ul>
+            </noscript>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Apex Bakery. All rights reserved.</p>
+    </footer>
+    <script src="js/script.js" defer></script>
+</body>
+</html>

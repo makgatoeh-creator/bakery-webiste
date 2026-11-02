@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Apex Bakery, call either branch, or view the bakery locations on the map.">
+    <title>Contact &amp; Bakery Locations | Apex Bakery</title>
+    <link rel="canonical" href="https://snazzy-cannoli-789af1.netlify.app/contact.html">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header>
+        <p class="brand-name">Apex Bakery</p>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="contact.html" aria-current="page">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section>
+            <h1>Bakery Locations &amp; Contact Details</h1>
+            <p id="current-time" aria-live="polite"></p>
+
+            <article itemscope itemtype="https://schema.org/Bakery">
+                <meta itemprop="name" content="Apex Bakery - Main Branch">
+                <h2>Main Branch (Downtown)</h2>
+                <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                    <p itemprop="streetAddress">12 Main Street</p>
+                    <p itemprop="addressLocality">Central City</p>
+                    <p>Phone: <a itemprop="telephone" href="tel:+27111234567">+27 11 123 4567</a></p>
+                </address>
+            </article>
+
+            <article itemscope itemtype="https://schema.org/Bakery">
+                <meta itemprop="name" content="Apex Bakery - Suburban Branch">
+                <h2>Suburban Branch</h2>
+                <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                    <p itemprop="streetAddress">45 Park Drive, Suburban Mall</p>
+                    <p itemprop="addressLocality">Polokwane</p>
+                    <p>Phone: <a itemprop="telephone" href="tel:+27119876543">+27 11 987 6543</a></p>
+                </address>
+            </article>
+        </section>
+
+        <section>
+            <h2>General Contact Form</h2>
+            <form id="contact-form" action="mailto:tinarax04@gmail.com" method="post" enctype="text/plain" data-email-subject="Apex Bakery general message">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" autocomplete="name" minlength="2" maxlength="80" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" autocomplete="email" maxlength="254" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel" pattern="[+0-9() -]{7,20}" title="Enter 7 to 20 characters using digits, spaces, +, parentheses, or hyphens." required>
+
+                <label for="message-type">Message Type:</label>
+                <select id="message-type" name="message-type" required>
+                    <option value="" selected disabled>Select a message type</option>
+                    <option value="general">General question</option>
+                    <option value="order">Product or order question</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="comments">Your Message:</label>
+                <textarea id="comments" name="message" rows="4" minlength="10" maxlength="2000" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+            <p class="form-status" role="status" aria-live="polite" hidden></p>
+            <noscript><p>Complete this form to open an email draft addressed to tinarax04@gmail.com. Review and send the draft from your email app.</p></noscript>
+        </section>
+
+        <section>
+            <h2>Find Us</h2>
+            <div class="map-locations" role="group" aria-label="Choose a bakery location">
+                <button type="button" class="map-location-button" data-map-query="45 Park Drive, Suburban Mall, Polokwane" aria-pressed="true">Suburban Branch</button>
+                <button type="button" class="map-location-button" data-map-query="12 Main Street, Central City" aria-pressed="false">Main Branch</button>
+            </div>
+            <iframe
+                src="https://www.google.com/maps?q=45%20Park%20Drive%2C%20Suburban%20Mall%2C%20Polokwane&z=15&output=embed"
+                title="Map showing 45 Park Drive, Suburban Mall in Polokwane"
+                id="bakery-map"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen>
+            </iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Apex Bakery. All rights reserved.</p>
+    </footer>
+    <script src="js/script.js" defer></script>
+</body>
+</html>
